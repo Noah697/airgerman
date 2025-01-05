@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air German Virtual</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./Bilder/Logo.png" alt="Air German Logo" class="navbar-logo">
+            <img src="./Bilder/Air German Text.png" alt="Air German Text" class="navbar-text">
+        </div>
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#Fleet">Fleet</a>
+            <a href="#Team">Our Team</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Erstes Bild -->
+        <section>
+            <img src="./Bilder/Screenshot_141.png" alt="Flight Simulator" class="full-width-image">
+        </section>
+
+        <!-- Schwarzes Bild mit Kästen -->
+        <section class="black-section">
+            <img src="./Bilder/Our Mission.png" alt="Our Mission">
+            <img src="./Bilder/Pilot Training Academy.png" alt="Pilot Training Academy">
+            <img src="./Bilder/Our Route Network.png" alt="Our Route Network">
+        </section>
+        
+        <!-- Zweites Bild mit Map und Text -->
+        <section class="map-section">
+            <img src="./Bilder/Screenshot_2024-07-23_182549.NEF.jpg" alt="Flight Simulator 2" class="full-width-image">
+            <!-- Text Overlay -->
+            <div class="map-overlay-text">Track Our Flights</div>
+            <!-- Map -->
+            <iframe 
+                src="https://newsky.app/airline/public/map?style=dark&token=KRD_5inLeXR9jJtpj6f64eQyWdrW8KsJTe" 
+                class="map-iframe"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <!-- Kontaktformular -->
+        <section class="contact-section">
+            <div class="contact-overlay">
+                <h2>Contact Us</h2>
+                <form action="#" method="post" class="contact-form">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Comment</label>
+                        <textarea id="comment" name="comment" rows="5" placeholder="Enter your comment" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-media-container">
+            <a href="https://www.tiktok.com/@airgerman.va" target="_blank">
+                <img src="./Bilder/tiktok.png" alt="TikTok" class="social-icon">
+            </a>
+            <a href="https://Instagram.com/air.german/" target="_blank">
+                <img src="./Bilder/Instagram.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.youtube.com/@Air-German2024" target="_blank">
+                <img src="./Bilder/youtube.png" alt="YouTube" class="social-icon">
+            </a>
+            <a href="https://discord.gg/2up6BeW89k" target="_blank">
+                <img src="./Bilder/discord.png" alt="Discord" class="social-icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

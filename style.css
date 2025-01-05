@@ -1,0 +1,224 @@
+/* Basis-Styling */
+body {
+    background-color: #000080; /* Dunkelblau als Hintergrundfarbe */
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-text {
+    width: 20%;
+    margin-top: 25px;
+}
+
+.navbar-logo {
+    width: 100px;
+    height: 100px;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    white-space: nowrap;
+    margin-right: 850px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700; /* Goldener Hover-Effekt */
+}
+
+main {
+    margin-top: 80px; /* Platz für fixe Header-Leiste */
+}
+
+/* Volle Breite für Bilder */
+.full-width-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Schwarzer Bereich mit Kästen */
+.black-section {
+    background-color: black;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.black-section img {
+    max-width: 30%; /* Bilder gleichmäßig skalieren */
+    height: auto;
+    border-radius: 10px; /* Optional: abgerundete Ecken */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Optional: Schatten für ein modernes Design */
+}
+
+/* Styling für die Map */
+.map-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.map-iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px; /* Breite der Karte */
+    height: 400px; /* Höhe der Karte */
+    border: none; /* Entfernt Rahmen um das iFrame */
+    z-index: 10; /* Überlagert das Bild */
+}
+
+/* Text-Overlay über der Map */
+.map-overlay-text {
+    position: absolute;
+    top: 10%; /* Position vom oberen Rand */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 44px; /* Schriftgröße */
+    color: #000080; /* Goldene Farbe */
+    background-color: rgba(0, 0, 0, 0.7); /* Halbtransparenter schwarzer Hintergrund */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 15; /* Überlagert die Map */
+    font-weight: bold;
+}
+
+/* Kontaktformular */
+.contact-section {
+    position: relative;
+    background-image: url('./Bilder/Microsoft_Flight_Simulator_2024.07.17-23.01.png'); /* Hintergrundbild */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Volle Höhe des Viewports */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contact-overlay {
+    max-width: 450px; /* Maximale Breite des Containers für Formular und Button */
+    width: 90%; /* Passt sich kleineren Bildschirmen an */
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.contact-overlay h2 {
+    color: #ffd700; /* Goldene Schriftfarbe */
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Passt die Breite an */
+    max-width: 100%; /* Verhindert, dass sie größer als der Container werden */
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* Bezieht Padding in die Breitenberechnung mit ein */
+}
+
+.form-group textarea {
+    resize: vertical; /* Nur vertikal größenveränderbar */
+    min-height: 100px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%; /* Button nimmt die volle Breite ein */
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000080; /* Goldene Farbe */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+}
+
+.contact-form button:hover {
+    background-color: #000080; /* Dunkleres Gold */
+}
+
+footer {
+    background-color: #000080; /* Hintergrundfarbe des Fußbereichs */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Abstand zwischen den Icons */
+}
+
+.social-icon {
+    width: 50px; /* Größe der Icons */
+    height: 50px;
+    transition: transform 0.3s, filter 0.3s;
+    filter: grayscale(100%); /* Graue Icons für den Standardzustand */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Leichtes Vergrößern beim Hover */
+    filter: grayscale(0%); /* Farbe zurückbringen beim Hover */
+}
