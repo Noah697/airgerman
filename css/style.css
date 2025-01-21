@@ -749,53 +749,10 @@ p {
         }
 
         #fleet-page {
-          background-color: #000080; /* Blauer Hintergrund für Fleet-Seite */
-          background-image: none; /* Entfernt das Standard-Bild */
+
           padding: 20px; /* Optionaler Innenabstand */
       }
       
-      .section-title {
-          font-size: 2.5rem;
-          text-align: center;
-          margin-top: 40px;
-          margin-bottom: 20px;
-      }
-      
-      .image-grid {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 20px;
-      }
-      
-      .aircraft-box {
-          background-color: rgba(255, 255, 255, 0.2);
-          border-radius: 10px;
-          padding: 10px;
-          text-align: center;
-          width: 200px;
-      }
-      
-      .aircraft-box img {
-          width: 100%;
-          height: auto;
-          border-radius: 10px;
-          margin-bottom: 10px;
-      }
-      
-      .aircraft-box ul {
-          list-style-type: none;
-          padding: 0;
-          margin: 0;
-          font-size: 0.9rem;
-      }
-      
-      .divider {
-          border: none;
-          border-top: 2px solid white;
-          margin: 40px 0;
-      }
-
       .section-title {
         font-size: 2.5rem;
         text-align: center;
@@ -811,11 +768,11 @@ p {
     }
     
     .aircraft-box {
-        background-color: rgba(0, 0, 128, 0.8); /* Blauer Hintergrund */
-        border-radius: 50px;
-        padding: 50px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        padding: 10px;
         text-align: center;
-        width: 700px;
+        width: 400px;
     }
     
     .aircraft-box img {
