@@ -803,3 +803,80 @@ p {
         border-top: 2px solid white;
         margin: 40px 0;
     }
+
+
+  #team      {
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000080;
+      color: white;
+      text-align: center;
+  }
+  
+  .team-title {
+      font-size: 3rem;
+      margin: 20px 0;
+  }
+  
+  #team {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 20px;
+  }
+  
+  .team-section {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 1200px;
+  }
+  
+  .role-title {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+  }
+  
+  .staff-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+  }
+  
+  .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 200px;
+  }
+  
+  .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-bottom: 15px;
+  }
+  
+  .name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 0;
+  }
+  
+  .role {
+      font-size: 1rem;
+      font-style: italic;
+      color: #ddd;
+  }
+  
+  .divider {
+      border: none;
+      border-top: 2px solid white;
+      margin: 20px 0;
+      width: 80%;
+      margin: 40px auto;
+  }
+}

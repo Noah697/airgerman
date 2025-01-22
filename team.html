@@ -39,31 +39,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link tm-nav-link" href="#introduction">About Us</a>
+                <a class="nav-link tm-nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link tm-nav-link" href="#flights">Flight Tracking</a>
+                <a class="nav-link tm-nav-link" href="fleet.html">Fleet</a> <!-- Ensure fleet.html is in the correct directory -->
               </li>
               <li class="nav-item">
-                <a class="nav-link tm-nav-link" href="#contact">Contact Us</a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle tm-nav-link"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  More
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="fleet.html">Fleet</a></li>
-                  <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                  <li><a class="dropdown-item" href="team.html">Our Team</a></li>
-                </ul>
+                <a class="nav-link tm-nav-link" href="blog.html">Blog</a>
               </li>
             </ul>
           </div>
@@ -78,32 +60,75 @@
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="tm-section-pad-top tm-parallax-2">
-      <div class="container tm-container-contact">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="mb-4 tm-section-title">Contact Us</h2>
-            <div class="mb-5 tm-underline"></div>
-          </div>
-
-          <div class="col-12">
-            <form class="contact-form" action="https://usebasin.com/f/1e1a4839ab49" method="POST">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your Name" required />
-
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="Your Email" required />
-
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-
-              <button type="submit">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Team</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="team-title">Our Team</h1>
+        </header>
+        <main id="team">
+            <!-- Staff Roles -->
+            <section class="team-section">
+                <h2 class="role-title">Staff Team</h2>
+                <div class="staff-grid">
+                    <div class="profile">
+                        <img src="./Bilder/e9d5967c529c2be05a29287751f66a83_Nero AI_Photo_Face.png" alt="CEO" class="profile-pic">
+                        <p class="name">Noah Starck</p>
+                        <p class="role">CEO</p>
+                    </div>
+                    <div class="profile">
+                        <img src="./Bilder/ec1afa834269e5393d992b3b81490531.png" alt="CFO" class="profile-pic">
+                        <p class="name">Elias</p>
+                        <p class="role">CFO</p>
+                    </div>
+                    <div class="profile">
+                        <img src="./Bilder/IMG_4270.jpg" alt="COO" class="profile-pic">
+                        <p class="name">Max</p>
+                        <p class="role">COO</p>
+                    </div>
+                    <div class="profile">
+                        <img src="./Bilder/hr.jpg" alt="HR Manager" class="profile-pic">
+                        <p class="name">Maximilian</p>
+                        <p class="role">HR Manager</p>
+                    </div>
+                    <div class="profile">
+                        <img src="./Bilder/" alt="Trainer" class="profile-pic">
+                        <p class="name">-</p>
+                        <p class="role">Training Manager</p>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Divider -->
+            <hr class="divider">
+    
+            <!-- Pilots -->
+            <section class="team-section">
+                <h2 class="role-title">Top Pilots</h2>
+                <div class="staff-grid">
+                    <div class="profile">
+                        <img src="./images/senior_pilot.jpg" alt="Senior Pilot" class="profile-pic">
+                        <p class="name">-</p>
+                        <p class="role">Senior Captain</p>
+                    </div>
+                    <div class="profile">
+                        <img src="./images/flight_officer.jpg" alt="Flight Officer" class="profile-pic">
+                        <p class="name">-</p>
+                        <p class="role">Flight Officer</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+    </html>
+    
+    
 
     <div class="footer-clean">
       <footer>
