@@ -666,7 +666,22 @@ p {
         .contact-form button:hover {
             background: #000080;
         }
+        
+        .partner-logo {
+          width: 150px; /* Größe der Logos */
+          height: 150px;
+          object-fit: cover; /* Stellen Sie sicher, dass das Bild in den Kreis passt */
+          border: 3px solid #ddd;
+          transition: transform 0.3s ease;
+        }
+        
+        .partner-logo:hover {
+          transform: scale(1.1); /* Leichte Vergrößerung beim Hover */
+          border-color: #007bff; /* Optional: Farbanpassung beim Hover */
+        }
+        
 
+        
         .footer-clean {
           padding:50px 0;
           background-color:#121212;
