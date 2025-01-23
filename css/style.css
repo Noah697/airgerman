@@ -805,6 +805,45 @@ p {
     }
 
 
+    .a320-registrations {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px; 
+      justify-content: center; 
+      list-style: none; 
+      padding: 0;
+      margin: 0 auto;
+      text-align: center; 
+    }
+    
+    /* Titel (z. B. Airbus A320) weiß */
+.aircraft-box h2 {
+  color: white;
+}
+
+/* Registrierungsnummern weiß */
+.aircraft-box ul li {
+  color: white;
+}
+
+/* Text "Registrations:" weiß */
+.aircraft-box p {
+  color: white;
+}
+
+/* Abschnittstitel (z. B. Air German) weiß */
+.section-title {
+  color: white;
+}
+
+
+
+.a320-registrations li {
+  font-size: 16px; 
+}
+
+
+
   #team      {
     body {
       font-family: Arial, sans-serif;
