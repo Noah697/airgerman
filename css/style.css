@@ -872,6 +872,8 @@ p {
   .team-title {
       font-size: 3rem;
       margin: 20px 0;
+      text-align: center;
+      color: white;
   }
   
   #team {
