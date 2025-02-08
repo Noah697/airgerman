@@ -121,15 +121,35 @@
             <h2 class="tm-text-primary tm-section-title mb-4">Latest News</h2>
           </div>
         </div>
-        <div class="box">
-          <img src="Bilder/A300.png" alt="Bild">
-          <h2>Our latest youtube video</h2>
-          <button onclick="window.open('', '_blank')" >Link to video</button>
+        <div class="container-box">
+          <div class="box">
+              <img src="Bilder/B77W Gate.png" alt="Bild">
+              <h2>Our latest YouTube video</h2>
+              <button onclick="window.open('https://www.youtube.com/', '_blank')">
+                  Link to video
+              </button>
+          </div>
+          
+          <div class="box">
+              <img src="Bilder/video2.png" alt="Bild">
+              <h2>Text hier</h2>
+              <button onclick="window.open('linkhere', '_blank')">
+                  Text hier
+              </button>
+          </div>
+          
+          <div class="box">
+              <img src="Bilder/video3.png" alt="Bild">
+              <h2>Text hier</h2>
+              <button onclick="window.open('linkhere', '_blank')">
+                  Text hier
+              </button>
+          </div>
       </div>
       </div>
     </section>
     
-    <section id="flights" class="tm-section-pad-top">
+    <section id="flights" class="tm-section-pad-top" style="margin-bottom: 100px;">
       <div class="container tm-container-gallery">
         <div class="row">
           <div class="text-center col-12">
@@ -143,6 +163,22 @@
 		style="border: none;"
 		allowfullscreen>
 	</iframe>
+      </div>
+    </section>
+
+    <section id="destinations" class="tm-section-pad-top" style="margin-bottom: 100px;">
+      <div class="container tm-container-gallery">
+        <div class="row">
+          <div class="text-center col-12">
+            <h2 class="tm-text-primary tm-section-title mb-4">Our Destinations</h2>
+          </div>
+        </div>
+        <iframe 
+        src="//umap.openstreetmap.fr/en/map/untitled-map_1096297?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true"
+        width="100%" 
+        height="700" 
+        allowfullscreen>
+      </iframe>
       </div>
     </section>
 
@@ -260,8 +296,5 @@
     <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-      // Your JavaScript remains unchanged
-    </script>
   </body>
 </html>
