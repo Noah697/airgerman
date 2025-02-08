@@ -119,16 +119,7 @@ a:focus {
   color: #0C77FF;
 }
 
-.navbar-toggler {
-  border: 1px solid white;
-  padding-left: 10px;
-  padding-right: 10px;
-}
 
-.navbar-toggler-icon {
-  color: #121212;
-  padding-top: 6px;
-}
 
 .tm-navbar.scroll .navbar-toggler {
   border: 1px solid #8f8f8f;
