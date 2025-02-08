@@ -937,10 +937,12 @@ p {
   margin: auto;
 }
 
+
+
 .box {
   width: calc(33.33% - 20px); /* 3 Boxen pro Zeile */
   min-width: 280px; /* Mindestbreite */
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.514);
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
