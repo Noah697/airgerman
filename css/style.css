@@ -925,39 +925,67 @@ p {
       margin: 20px 0;
       width: 80%;
       margin: 40px auto;
-  }
-
-  
+  } 
 }
 
+.container-box {
+  display: flex;
+  flex-wrap: wrap;  /* Erlaubt Umbruch */
+  gap: 20px; /* Abstand zwischen den Boxen */
+  justify-content: center; /* Zentriert die Boxen */
+  max-width: 1200px; /* Begrenzte Breite */
+  margin: auto;
+}
 
 .box {
-  background: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  width: 350px;
+  width: calc(33.33% - 20px); /* 3 Boxen pro Zeile */
+  min-width: 280px; /* Mindestbreite */
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
+  transition: transform 0.3s ease-in-out; /* Smooth Hover Effekt */
+}
+
+.box:hover {
+  transform: scale(1.05); /* Leichtes Vergrößern beim Hover */
+}
+
+/* Responsive Anpassung für kleinere Bildschirme */
+@media (max-width: 900px) {
+  .box {
+    width: calc(50% - 20px); /* 2 Boxen pro Zeile */
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    gap: 15px;
+  }
+  .box {
+    width: 100%; /* 1 Box pro Zeile */
+  }
 }
 
 .box img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .box h2 {
-  font-size: 22px;
-  margin: 15px 0;
+  font-size: 24px;
+  margin: 20px 0;
   color: #333;
 }
 
 .box button {
-  background-color: #007BFF;
+  background-color: #000080;
   color: white;
-  padding: 10px 15px;
+  padding: 12px 18px;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 6px;
+  font-size: 18px;
   cursor: pointer;
   transition: background 0.3s;
 }
@@ -965,3 +993,4 @@ p {
 .box button:hover {
   background-color: #0056b3;
 }
+
