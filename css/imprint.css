@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header */
+.header {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 8px 8px 0 0;
+}
+
+.header .title {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Content Styling */
+.translations-content-container {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #007BFF;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+p[style*="font-size: 40px"] {
+    font-size: 40px;
+}
+
+p[style*="font-size: 30px"] {
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: #0044cc;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #007BFF;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    .header .title {
+        font-size: 20px;
+    }
+}
