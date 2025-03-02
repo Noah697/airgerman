@@ -59,7 +59,81 @@
       </div>
     </section>
 
-
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Air German Virtual</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .news-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .news-item {
+            background: rgba(255, 255, 255, 0.39);
+            margin: 15px;
+            padding: 15px;
+            width: 30%;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .news-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .news-item h2 {
+            font-size: 1.5em;
+        }
+        .news-item a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: blue;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+        .news-item a:hover {
+            background: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Air German News</h1>
+    </header>
+    <div class="container">
+      <div class="news-grid">
+          <div class="news-item">
+              <div class="news-image">
+                  <img src="./Bilder/Airbus A320 SL Air German.png" alt="Airbus A320 SL Air German">
+                  <div class="news-overlay">
+                      <p>D-ALGQ & D-ALGX update</p>
+                  </div>
+              </div>
+              <div class="news-content">
+                  <h2>...</h2>
+                  <p class="date">March 2, 2025</p>
+                  <p>Exclusive update for two of our Aircrafts!</p>
+                  <a href="news1.html" class="read-more">Read More</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  
 
     <div class="footer-clean">
       <footer>
@@ -68,8 +142,9 @@
             <div class="col-sm-4 col-md-3 item">
               <h3>Useful links</h3>
               <ul>
-                <li><a href="#">TOS</a></li>
-                <li><a href="#">Privacy</a></li>
+	 	<li><a href="imprint.html">Imprint</a></li>
+                <li><a href="TOS.html">Terms and Conditions</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
               </ul>
             </div>
             <div class="col-lg-3 item social">
@@ -98,8 +173,5 @@
     <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-      // Your JavaScript remains unchanged
-    </script>
   </body>
 </html>
