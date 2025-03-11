@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Air German</title>
+    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css" />
+    <script src="https://kit.fontawesome.com/fcdb369607.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="/Bilder/Logo-white.png" />
+  </head>
+  <body>
+    <!-- Hero section -->
+<section id="hero" class="text-white tm-font-big tm-parallax">
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
+        <div class="container">
+          <div class="tm-next">
+            <img src="/Bilder/Logo-white.png" style="height: 40px; width: 40px;" />
+            <a href="#hero" class="navbar-brand">Air German</a>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link tm-nav-link" href="#introduction">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link tm-nav-link" href="#flights">Flight Tracking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link tm-nav-link" href="#partners">Our partners</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link tm-nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle tm-nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="fleet.html">Fleet</a></li>
+                <li><a class="dropdown-item" href="news.html">News</a></li>
+                <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+              </ul>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="text-center tm-hero-text-container">
+        <div class="tm-hero-text-container-inner">
+          <h2 class="tm-hero-title">Air German</h2>
+          <p class="tm-hero-subtitle">Better, Easier, Air German</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="faq" class="container mt-5">
+        <h2 class="text-center">Frequently Asked Questions (FAQ)</h2>
+        <div class="accordion" id="faqAccordion">
+          
+          <div class="card" style="margin-bottom: 10px; border-width: 1px;">
+            <div class="card-header" id="headingOne" style="background-color: rgba(248, 249, 250, 0.582); cursor: pointer;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <h5 class="mb-0">
+                <span style="color: black; text-decoration: none;">How do I join Air German as a pilot?</span>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
+              <div class="card-body">
+                You can apply to become a pilot on our website by filling out the application form. Once accepted, you will receive all necessary instructions and access to our systems.
+              </div>
+            </div>
+          </div>
+      
+          <div class="card" style="margin-bottom: 10px; border-width: 1px;">
+            <div class="card-header" id="headingTwo" style="background-color: #ffffff; cursor: pointer;" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <h5 class="mb-0">
+                <span style="color: black; text-decoration: none;">What flight simulator do I need to fly for Air German?</span>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+              <div class="card-body">
+                We support multiple flight simulators, including Microsoft Flight Simulator (MSFS) and X-Plane. You must also use our ACARS system to log your flights (newsky).
+              </div>
+            </div>
+          </div>
+          
+          <div class="card" style="margin-bottom: 10px; border-width: 1px;">
+            <div class="card-header" id="headingThree" style="background-color: #f8f9fa; cursor: pointer;" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <h5 class="mb-0">
+                <span style="color: black; text-decoration: none;">Are there any flight requirements for pilots?</span>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+              <div class="card-body">
+                Yes, we require pilots to complete a minimum number of flights per month to stay active. Specific requirements can be found in our pilot handbook.
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      
+      <script>
+        $(document).ready(function() {
+          $('.card-header').on('click', function() {
+            var target = $(this).attr('data-target');
+            $(target).collapse('toggle');
+          });
+        });
+      </script>
+      
+    <div class="footer-clean">
+      <footer>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Useful links</h3>
+              <ul>
+	 	<li><a href="imprint.html">Imprint</a></li>
+                <li><a href="TOS.html">Terms and Conditions</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 item social">
+              <a href="https://discord.gg/2up6BeW89k" target="_blank"><i class="icon fa-brands fa-discord"></i></a>
+              <a href="https://www.twitch.tv/airgerman_virtual" target="_blank"><i class="icon fa-brands fa-twitch"></i></a>
+              <a href="https://www.tiktok.com/@airgerman.va" target="_blank"><i class="icon fa-brands fa-tiktok"></i></a>
+              <a href="https://www.instagram.com/air.german/" target="_blank"><i class="icon fa-brands fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@Air-German2024"target="_blank"><i class="icon fa-brands fa-youtube"></i></a>
+              <p class="copyright">
+                &copy; Copyright 2025 -
+                <script>document.write(new Date().getFullYear());</script>
+                <strong><span>Air German</span></strong> All Rights Reserved<br />
+                Designed and Developed by:
+                <a href="https://nico264dev.github.io/" target="_blank">&lt; / &gt; Nico_264</a> and
+                <a href="https://discord.com/users/783315515682455584" target="_blank">Noah</a><br />
+                Made with ❤ in Germany
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
