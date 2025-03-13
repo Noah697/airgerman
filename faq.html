@@ -12,6 +12,7 @@
     <script src="https://kit.fontawesome.com/fcdb369607.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/faq.css" />
     <link rel="icon" href="/Bilder/Logo-white.png" />
   </head>
   <body>
@@ -39,34 +40,8 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link tm-nav-link" href="#introduction">About Us</a>
+                <a class="nav-link tm-nav-link" href="index.html">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link tm-nav-link" href="#flights">Flight Tracking</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link tm-nav-link" href="#partners">Our partners</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link tm-nav-link" href="#contact">Contact Us</a>
-              </li>
-            </ul>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle tm-nav-link"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-expanded="false"
-              >
-                More
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="https://airgerman-virtual.de">Home</a></li>
-              </ul>
-            </li>
-          </ul>
           </div>
         </div>
       </nav>
@@ -81,7 +56,7 @@
 
     
     <section id="faq" class="container mt-5">
-        <h2 class="text-center">Frequently Asked Questions (FAQ)</h2>
+        <h1 class="text-center">Frequently Asked Questions (FAQ)</h1>
         <div class="accordion" id="faqAccordion">
           
           <div class="card" style="margin-bottom: 10px; border-width: 1px;">
@@ -92,7 +67,7 @@
             </div>
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
               <div class="card-body">
-                You can apply to become a pilot on our website by filling out the application form. Once accepted, you will receive all necessary instructions and access to our systems.
+                You can apply to become a pilot on our Discord by opening a ticket. Once accepted, you will receive all necessary instructions and access to our systems.
               </div>
             </div>
           </div>
@@ -109,17 +84,31 @@
               </div>
             </div>
           </div>
-          
+
           <div class="card" style="margin-bottom: 10px; border-width: 1px;">
-            <div class="card-header" id="headingThree" style="background-color: #f8f9fa; cursor: pointer;" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              <h5 class="mb-0">
-                <span style="color: black; text-decoration: none;">Are there any flight requirements for pilots?</span>
-              </h5>
+            <div class="card-header" style="background-color: #ffffff; cursor: pointer;" data-toggle="collapse" data-target="#collapseInstall" aria-expanded="false" aria-controls="collapseInstall">
+              <h5 class="mb-0">I’m having trouble installing the Air German Virtual live tracker. What should I do?</h5>
             </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
-              <div class="card-body">
-                Yes, we require pilots to complete a minimum number of flights per month to stay active. Specific requirements can be found in our pilot handbook.
-              </div>
+            <div id="collapseInstall" class="collapse" aria-labelledby="headingInstall" data-parent="#faqAccordion">
+              <div class="card-body">If you have problems with the installation, you can ask other community members or pilots for help. If you still have problems, you can contact support in the #general-support channel.</div>
+            </div>
+          </div>
+  
+          <div class="card" style="margin-bottom: 10px; border-width: 1px;">
+            <div class="card-header" style="background-color: #f8f9fa; cursor: pointer;" data-toggle="collapse" data-target="#collapseFlights" aria-expanded="false" aria-controls="collapseFlights">
+              <h5 class="mb-0">Do I need to complete a minimum number of flights per month?</h5>
+            </div>
+            <div id="collapseFlights" class="collapse" aria-labelledby="headingFlights" data-parent="#faqAccordion">
+              <div class="card-body">Yes, to maintain an active status in our airline, pilots must complete at least 3 flights per month. If you are unable to fly for a while, please inform us so we can keep your account active.</div>
+            </div>
+          </div>
+  
+          <div class="card" style="margin-bottom: 10px; border-width: 1px;">
+            <div class="card-header" style="background-color: #ffffff; cursor: pointer;" data-toggle="collapse" data-target="#collapseAge" aria-expanded="false" aria-controls="collapseAge">
+              <h5 class="mb-0">Is there an age requirement to join?</h5>
+            </div>
+            <div id="collapseAge" class="collapse" aria-labelledby="headingAge" data-parent="#faqAccordion">
+              <div class="card-body">Yes, you must be at least 13 years old to join Air German Virtual. This complies with Discord’s and other platform policies.</div>
             </div>
           </div>
           
