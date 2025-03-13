@@ -55,6 +55,7 @@ body {
     margin-bottom: 50px;
 }
 
+
 /* Mobile responsiveness */
 @media screen and (max-width: 768px) {
     .container {
@@ -79,3 +80,9 @@ body {
         font-size: 1.2em; /* Smaller heading on mobile */
     }
 }
+
+
+h1 {
+    color: white;
+  }
+
