@@ -1,69 +1,96 @@
+/* Allgemeines Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
+    background: #111;
+    color: white;
 }
 
+/* Header */
+header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Container */
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
+/* News Grid */
 .news-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 20px;
 }
 
+/* News-Item */
 .news-item {
-    background: rgba(255, 255, 255, 0.39);
-    margin: 15px;
+    background: rgba(255, 255, 255, 0.2);
     padding: 15px;
-    width: 30%; /* Default width for desktop */
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 50px;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.news-item img {
-    max-width: 100%;
+.news-item:hover {
+    transform: scale(1.05);
+}
+
+/* Bilder */
+.news-image img {
+    width: 100%;
     border-radius: 5px;
 }
 
-.news-item h2 {
+/* News Content */
+.news-content h2 {
     font-size: 1.5em;
+    margin: 10px 0;
 }
 
-.news-item a {
+.date {
+    color: #ccc;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+/* Read More Button */
+.read-more {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
     background: blue;
     color: white;
     text-decoration: none;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
-.news-item a:hover {
+.read-more:hover {
     background: darkblue;
 }
 
-#header {
+/* Footer */
+footer {
     margin-top: 50px;
-    margin-bottom: 50px;
+    padding: 20px;
+    background: #222;
 }
 
-
-/* Mobile responsiveness */
+/* Responsive Design */
 @media screen and (max-width: 768px) {
     .container {
         width: 90%;
     }
 
     .news-item {
-        width: 45%; /* For tablets and smaller devices, two items per row */
+        width: 100%;
     }
 }
 
@@ -72,17 +99,7 @@ body {
         width: 95%;
     }
 
-    .news-item {
-        width: 100%; /* For mobile, one item per row */
-    }
-
-    .news-item h2 {
-        font-size: 1.2em; /* Smaller heading on mobile */
+    .news-content h2 {
+        font-size: 1.2em;
     }
 }
-
-
-h1 {
-    color: white;
-  }
-
